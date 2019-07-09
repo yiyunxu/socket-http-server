@@ -97,7 +97,7 @@ def response_path(path):
     #content = b"not implemented"
     #mime_type = b"not implemented"
     root_path = "webroot"
-    print(getcwd())
+    #print(getcwd())
     new_path = join(getcwd(), root_path, path.strip('/'))
     if isfile(new_path):
         mime_type = mimetypes.guess_type(new_path)[0]
